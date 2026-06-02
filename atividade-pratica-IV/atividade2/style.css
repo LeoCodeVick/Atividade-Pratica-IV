@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.topo {
+    background-color: #a0a01e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner {
+    background-color: #5f5f09;
+    color: white;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pratos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #e9e9e9;
+    min-height: 180px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contato {
+    padding: 20px;
+}
+
+.contato h2 {
+    margin-bottom: 15px;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+button {
+    background-color: #939311;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #5d5d12;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .topo {
+        padding: 15px;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .pratos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .banner {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .topo {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pratos {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .banner {
+        height: 180px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
